@@ -17,6 +17,11 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testAdd(int x, int y, int z){
+        assertEquals(z,calculator.add(x, y));
+    }
+
+    @Test
     public void testSubtract() {
         assertEquals(-1, calculator.subtract(2, 3));
     }
